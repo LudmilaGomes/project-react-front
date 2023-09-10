@@ -1,0 +1,38 @@
+.caixaInputLogin
+{
+    /* margin-left: 45px;
+    margin-right: 45px; */
+    margin: 0 auto;
+    margin-bottom: 15px;
+    /* text-align: left; */
+}
+
+.parag
+{
+    margin-left: 45px;
+    font-size: medium;
+    text-align: left;
+    font-weight: 350;
+}
+
+.socoro
+{
+    width: 360px;
+    height: 25px;
+    border-color: #DDDDDD;
+    border-style:solid;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+input::placeholder
+{
+    color: rgba(154, 154, 154, 0.555);
+}
+
+input:focus
+{
+    border-color: #dedede;
+    color: #454545;
+    background-color: #e7d8be28;
+}

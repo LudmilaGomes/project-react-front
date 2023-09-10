@@ -1,0 +1,51 @@
+.header
+{
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #CBB69D;
+	color: black;
+}
+
+.organizBlock
+{
+	align-items: start;
+	height: 30px;
+	width: 100px;
+	background-color: #a46922;
+	border-radius: 10px;
+}
+
+.pPesquisa
+{
+	margin-left: 650px;
+	margin-right: 5px;
+	font-size: medium;
+}
+
+.pBiblio
+{
+	margin-left: 45px;
+	font-size: large;
+}
+
+.inputBox
+{
+	margin-left: 5px;
+	width: 230px;
+	height: 30px
+}
+
+.customCollapse
+{
+	background-color: #CBB69D;
+  color: black
+}
+
+.content
+{
+	margin: 100px 16px 0;
+	overflow: initial ;
+}

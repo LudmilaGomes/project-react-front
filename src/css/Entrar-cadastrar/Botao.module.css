@@ -1,0 +1,14 @@
+.buttonLogin
+{
+    font-size: 13px;
+    font-weight:350;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-color: #FFFFFF;
+    background-color: #E7D8BE;
+    color:#ffffff;
+    width: 370px;
+    height: 45px;
+    border-radius: 6px;
+}

@@ -1,0 +1,67 @@
+.mainBlock
+{
+    border-color: black;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 20px;
+    margin: 40px; 
+    width: 460px; 
+    height: 500px; 
+    outline: auto #DDDDDD;
+    margin: 0 auto;
+}
+
+.introBlock
+{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+
+.introBiblio
+{
+    font-size: 25px;
+    font-weight:600
+}
+
+.introEntrar
+{
+    font-size: 20px;
+    font-weight:350
+}
+
+.inputBlock
+{
+    margin-bottom: 30px;
+    font-size: medium;
+    font-weight:300;
+}
+
+.parag
+{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.CustomInput
+{
+    width: 370px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 350;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.CustomButton
+{
+    width: 370px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 350;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 40px;
+}
