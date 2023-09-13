@@ -63,14 +63,14 @@ function Nav(props)
             >
               <p>long content</p>
               {/*SIMULA UM GRANDE CONTEÚDO:*/}
-              {
+              {/* {
                 Array.from({ length: 100 }, (_, index) => (
                   <React.Fragment key={index}>
                     {index % 20 === 0 && index ? 'more' : '...'}
                     <br />
                   </React.Fragment>
                 ))
-              }
+              } */}
             </div>
           </Content>
             <Footer style={{ textAlign: 'center' }}>Ludmila Gomes @2023 👌</Footer>
