@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
 import { LoginOutlined, UserAddOutlined } from '@ant-design/icons';
-import { Layout, Menu, theme, ConfigProvider, Input } from 'antd';
+import { Layout, Menu, theme, ConfigProvider, Input, Select, Space } from 'antd';
 import CustomCollapse from './CustomCollapse';
 import styles from '../../css/Navegar/Nav.module.css';
+import CompBookExibe from './CompBookExibe';
 
 const { Header, Content, Footer, Sider } = Layout;
 
 function Nav(props) 
 {
   const [collapsed, setCollapsed] = useState(false);
-  const { token: { colorBgContainer } } = theme.useToken();
+  const { token: { colorBgContainer } } = theme.useToken()
+  
+  const options = [
+  {
+    value: 'gênero',
+    label: 'gênero',
+  },
+  {
+    value: 'socorro',
+    label: 'socorro',
+  },
+];
 
   return (
     <ConfigProvider
@@ -17,6 +29,26 @@ function Nav(props)
         token: {
           colorPrimary: '#a46922',
         },
+        components: {
+          Button: {
+            colorBorder: '#E7D8BE',
+            colorPrimaryHover: '#E7D8BE'
+          },
+          Input: {
+            controlOutline: '#e7d8be76',
+            colorPrimaryHover: '#e7d8be76'
+          },
+          Select: {
+            // colorBgContainer: '#E7D8BE',
+            colorBorder: '#E7D8BE',
+            colorPrimaryHover: '#E7D8BE'
+          },
+          Sider: {
+            colorBgContainer: '#E7D8BE',
+            colorBorder: '#E7D8BE',
+            colorPrimaryHover: '#E7D8BE'
+          }
+        }
       }}
     >
       <Layout style={{ minHeight: '100vh' }}>
@@ -25,6 +57,10 @@ function Nav(props)
           <p className={styles.pBiblio}>Biblioteca Virtual</p>
           <p className={styles.pPesquisa}>Pesquisar:</p>
           <Input  placeholder='Insira o nome do livro' className={styles.inputBox}/>
+          <p className={styles.pPesquisa}>Filtrar:</p>
+          <Space.Compact>
+            <Select defaultValue="Opções" options={options}/>
+          </Space.Compact>
         </Header>
         <Layout>
           <Sider collapsible collapsed={collapsed} trigger={null} width={200}
@@ -61,7 +97,9 @@ function Nav(props)
                 background: colorBgContainer
               }}  
             >
-              <p>long content</p>
+              {/* <p>long content</p> */}
+              <CompBookExibe name='Morro dos Ventos Uivantes e Cornos Demais Além da Conta' author='Emily Brontë' />
+              <CompBookExibe name='Morro dos Ventos Uivantes e Cornos Demais Além da Conta' author='Emily Brontë' />
               {/*SIMULA UM GRANDE CONTEÚDO:*/}
               {/* {
                 Array.from({ length: 100 }, (_, index) => (
