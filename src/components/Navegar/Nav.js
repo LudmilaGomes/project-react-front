@@ -3,7 +3,7 @@ import { LoginOutlined, UserAddOutlined } from '@ant-design/icons';
 import { Layout, Menu, theme, ConfigProvider, Input, Select, Space } from 'antd';
 import CustomCollapse from './CustomCollapse';
 import styles from '../../css/Navegar/Nav.module.css';
-import CompBookExibe from './CompBookExibe';
+import CompLivroExibe from './CompLivroExibe';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -58,7 +58,7 @@ function Nav(props)
           <p className={styles.pPesquisa}>Pesquisar:</p>
           <Input  placeholder='Insira o nome do livro' className={styles.inputBox}/>
           <p className={styles.pPesquisa}>Filtrar:</p>
-          <Space.Compact>
+          <Space.Compact className={styles.selectBox}>
             <Select defaultValue="Opções" options={options}/>
           </Space.Compact>
         </Header>
@@ -98,8 +98,8 @@ function Nav(props)
               }}  
             >
               {/* <p>long content</p> */}
-              <CompBookExibe name='Morro dos Ventos Uivantes e Cornos Demais Além da Conta' author='Emily Brontë' />
-              <CompBookExibe name='Morro dos Ventos Uivantes e Cornos Demais Além da Conta' author='Emily Brontë' />
+              <CompLivroExibe name='Morro dos Ventos Uivantes e Cornos Demais Além da Conta' author='Emily Brontë' />
+              <CompLivroExibe name='Morro dos Ventos Uivantes e Cornos Demais Além da Conta' author='Emily Brontë' />
               {/*SIMULA UM GRANDE CONTEÚDO:*/}
               {/* {
                 Array.from({ length: 100 }, (_, index) => (

@@ -15,25 +15,27 @@
 	height: 30px;
 	width: 100px;
 	background-color: #a46922;
-	border-radius: 10px;
+	border-radius: 7px;
 }
 
 .pBiblio
 {
 	margin-left: 20px;
-	font-size: large;
-	margin-right: 320px;
+	font-size: 16px;
+	font-weight: 350;
 }
 
 .pPesquisa
 {
 	margin-left: 200px;
 	margin-right: 5px;
-	font-size: medium;
+	font-size: 16px;
+	font-weight: 350;
 }
 
 .inputBox
 {
+  border-radius: 3px;
 	margin-left: 5px;
 	width: 200px;
 	height: 30px
